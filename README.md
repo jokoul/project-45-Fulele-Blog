@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a blog website made with Vue.js and firebase. In this project, I used the composition API
+This is a blog talking about medicinal plant made with Vue.js and firebase. In this project, I used the composition API
 
 ## Stack
 
