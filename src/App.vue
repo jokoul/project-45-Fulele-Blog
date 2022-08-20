@@ -2,17 +2,21 @@
   <div class="app-wrapper">
     <div class="app">
       <Navigation />
-      <router-view />
+      <main>
+        <router-view />
+      </main>
+      <FooterVue />
     </div>
   </div>
 </template>
 
 <script>
 import Navigation from './components/Navigation'
+import FooterVue from './components/Footer.vue'
 
 export default {
   name: "app",
-  components: {Navigation},
+  components: {Navigation, FooterVue},
   data() {
     return {};
   },
@@ -53,5 +57,9 @@ export default {
 
 .link-light {
   color: #fff;
+}
+
+main {
+  min-height: 100vh;
 }
 </style>

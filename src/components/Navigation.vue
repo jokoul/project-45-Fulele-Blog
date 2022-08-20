@@ -8,10 +8,10 @@
       </div>
       <div class="nav-links">
         <ul v-show="!mobile">
-          <router-linkn class="link" to="#">Home</router-linkn>
-          <router-linkn class="link" to="#">Blogs</router-linkn>
-          <router-linkn class="link" to="#">Create Post</router-linkn>
-          <router-linkn class="link" to="#">Login/Register</router-linkn>
+          <router-link class="link" to="#">Home</router-link>
+          <router-link class="link" to="#">Blogs</router-link>
+          <router-link class="link" to="#">Create Post</router-link>
+          <router-link class="link" to="#">Login/Register</router-link>
         </ul>
       </div>
     </nav>
@@ -19,10 +19,10 @@
     <menuIcon @click="toggleMobileNav" class="menu-icon" v-show="mobile" />
     <transition name="mobile-nav">
       <ul class="mobile-nav" v-show="mobileNav">
-        <router-linkn class="link" to="#">Home</router-linkn>
-        <router-linkn class="link" to="#">Blogs</router-linkn>
-        <router-linkn class="link" to="#">Create Post</router-linkn>
-        <router-linkn class="link" to="#">Login/Register</router-linkn>
+        <router-link class="link" to="#">Home</router-link>
+        <router-link class="link" to="#">Blogs</router-link>
+        <router-link class="link" to="#">Create Post</router-link>
+        <router-link class="link" to="#">Login/Register</router-link>
       </ul>
     </transition>
   </header>
@@ -32,7 +32,7 @@
 import menuIcon from "../assets/icons/bars.svg";
 
 export default {
-  name: "Navigation",
+  name: "navigation",
   components: { menuIcon },
   data() {
     return {
